@@ -257,6 +257,24 @@ h1, h2, h3, h4, h5, h6{
     opacity: 1;
 }
 
+@media (max-width: 767px) {
+  #header .slogan {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
+
+  #header .secondary-slogan {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+
+  #header .slogan-mini {
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+}
+
 
 /*////////////////////////////////////////////////////////////////////////
 //  03 - Drawer with menu
