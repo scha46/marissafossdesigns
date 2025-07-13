@@ -260,20 +260,25 @@ h1, h2, h3, h4, h5, h6{
 @media (max-width: 767px) {
   #header .slogan {
     font-size: 2.5em;
-    margin-bottom: 40px;
+    margin-bottom: 10px; /* reduced to raise it */
+	transform: translateY(-150px); /* shifts it up */
   }
 
   #header .secondary-slogan {
     font-size: 1.5em;
-    margin-bottom: 10px;
+    margin-top: 30px;    /* added to push it down */
+    margin-bottom: 15px;
+	transform: translateY(90px);
   }
 
   #header .slogan-mini {
     font-size: 1.2em;
-    margin-top: 10px;
+    margin-top: 20px;    /* increased to lower it */
     margin-bottom: 30px;
+	transform: translateY(80px);
   }
 }
+
 
 
 /*////////////////////////////////////////////////////////////////////////
@@ -465,6 +470,8 @@ h1, h2, h3, h4, h5, h6{
 
 #blog h1 {
 	padding-top: 25px;
+	font-size: 350%;
+	text-shadow: 1px  2px 0 #ac8761;
 }
 
 .bio {
@@ -522,6 +529,12 @@ h1, h2, h3, h4, h5, h6{
     width: 90%;
     text-align: center;
   }
+
+  .bio-img {
+	width: 75%;
+	padding: 0;
+	transform: translateX(0%);
+  }
 }
 
   
@@ -537,11 +550,14 @@ h1, h2, h3, h4, h5, h6{
 
 #testimonials .test-main{
 font-size: 6rem;
-text-shadow: #000000;
+font-size: 350%;
+text-shadow: 1px  2px 0 #ac8761;
+text-align: left;
 }
 
 #testimonials .test-sub{
-font-size: 2rem;
+font-size: 1.75rem;
+
 }
 
 #testimonials .testimonial > img {
@@ -551,6 +567,8 @@ font-size: 2rem;
 }
 #testimonials .testimonial {
 	padding: 25px;
+	padding-top: 0%;
+	padding-bottom: 0%;
 }
 #testimonials .testimonial-lower {
 	padding: 25px;
@@ -571,7 +589,15 @@ font-size: 2rem;
 #contact{
 	color: white;
 }
-#contact h1{color: white}
+#contact h1{
+	color: white
+}
+
+@media {
+.form-group label[for="message"] {
+  max-width: 100%;
+}
+}
 
 .form-control-white {
     background: transparent;
