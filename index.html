@@ -556,6 +556,59 @@
           <section class="block-body">
             <div class="row">
               <div class="col-md-6 col-md-offset-3">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="2beccd65-e02a-4558-9028-660bc1f052da"
+                  />
+                  <div class="form-group">
+                    <label for="name" class="sr-only">Your Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control form-control-white"
+                      id="name"
+                      placeholder="Your Name"
+                      autocomplete="name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="sr-only">Your Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control form-control-white"
+                      id="email"
+                      placeholder="Your Email"
+                      autocomplete="email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="message" class="sr-only">Message</label>
+                    <textarea
+                      name="message"
+                      class="form-control form-control-white"
+                      id="message"
+                      placeholder="Your Message"
+                      rows="6"
+                      maxlength="2000"
+                      required
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-o-2"
+                    id="submit-btn"
+                    value="Send Message"
+                  >
+                    Send Message
+                  </button>
+                </form>
+
+                <!-- Old form that opens email client, commented out for now
                 <form id="contact-form" role="form">
                   <div class="form-group">
                     <label for="name" class="sr-only">Your Name</label>
@@ -655,7 +708,7 @@
                       }, 2000);
                     });
                 </script>
-              </div>
+              --></div>
             </div>
           </section>
         </div>
